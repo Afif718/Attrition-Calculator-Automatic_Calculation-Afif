@@ -1,0 +1,154 @@
+body{
+	margin:0;
+  margin-top: 50px;
+	padding:20px;
+	font-family: sans-serif;
+
+}
+
+*{
+	/*box-sizing: border-box;*/
+	border-collapse: collapse;
+}
+
+/*.table-1, .table-2, .table-3, .table-4, .table-5, .table-6{
+	width: 100%;
+	border-collapse: collapse;
+
+}*/
+
+h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; text-align: center; }
+
+
+
+.container-1{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/*width: 105%;
+	max-width: 1920px;
+	min-width: 480px;
+	height: 200%;
+	margin-left: -8;
+	overflow: hidden;*/
+}
+
+.container-1 div{
+	border: 1px #ccc solid;
+	border-radius: 15px;
+  padding: 10px;
+
+}
+
+/* Gap Between Tables */
+.table{
+	margin: 25px;
+
+}
+
+
+
+/*responsive*/
+
+@media(max-width: 700px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: center;
+		padding-left: 50%;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+
+
+
+	
+	* {
+  font-family: sans-serif; /* Change your font family */
+
+
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  max-width: 500px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+
+
+
+
+
+}
+
+.content-table thead tr {
+  background-color: #1a0f40;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #1a0f40;
+}
+
+/*.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #1a0f40;
+}*/
+
+/* First Table style ends here*/
+
+/* Style for inputs c5 & f5*/
+.inputs{
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  background: #f2dfaa;
+}
+
+/* Style for outputs c5 & f5*/
+.outputs{
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+}
